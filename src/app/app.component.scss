@@ -1,0 +1,8 @@
+.hidden-select {
+    ::ng-deep {
+        .ag-checkbox,
+        .ag-selection-checkbox {
+            opacity: 0;
+        }
+    }
+}
