@@ -1,0 +1,21 @@
+<div>
+  <div class="toolbar">
+    <button class="toolbar__item"
+            (click)="toggleSelectable()">toggle select</button>
+    <span class="toolbar__item"> Rows: {{rowsCount}}</span            >
+    <span *ngIf="isSelecTable" 
+          class="toolbar__item"> Selected: {{selectedCount}}</span>
+  </div>
+  <ag-grid-angular
+    [class.hidden-select]="!isSelecTable"
+    style="height: 600px"
+    class="ag-theme-balham"
+    [rowData]="videos"
+    [columnDefs]="columns"
+    [modules]="modules"
+    [getContextMenuItems]="getContextMenuItems"
+    allowContextMenuWithControlKey="true"
+    enableCellTextSelection="true"
+    (gridReady)="onGridReady($event)">
+  </ag-grid-angular>
+</div>

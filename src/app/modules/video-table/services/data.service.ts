@@ -2,8 +2,8 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { map } from 'rxjs/operators';
-
 import { environment } from 'src/environments/environment';
+
 
 
 export interface DataStructure {
@@ -11,6 +11,9 @@ export interface DataStructure {
 }
 
 export interface VideoItem {
+  id: {
+    videoId: string
+  };
   snippet: {
     publishedAt: string,
     title: string,

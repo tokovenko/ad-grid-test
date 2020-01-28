@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { VideoItem } from 'src/app/services/data.service';
+import { VideoItem } from '../../services/data.service';
 
 @Component({
   selector: 'app-image-cell',

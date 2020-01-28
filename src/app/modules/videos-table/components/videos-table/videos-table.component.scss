@@ -1,0 +1,16 @@
+.hidden-select {
+    ::ng-deep {
+        .video-checkbox {
+            opacity: 0;
+        }
+    }
+}
+
+.toolbar {
+    display: flex;
+    margin-bottom: 20px;
+    
+    &__item {
+        padding: 10px;
+    }
+}

@@ -1,13 +1,6 @@
 <div>
-  <button (click)="toggleSelectable()">toggle select</button>
-  <ag-grid-angular
-    [class.hidden-select]="!isSelecTable"
-    style="height: 600px"
-    class="ag-theme-balham"
-    [rowData]="videos"
-    [columnDefs]="columns"
-    [getContextMenuItems]="getContextMenuItems"
-    rowSelection="multiple"
-    (gridReady)="onGridReady($event)">
-  </ag-grid-angular>
+  <div class="content">
+    <h1>angular-ag-grid app!</h1>
+  </div>
+  <app-videos-table [searchText]="searchText"></app-videos-table>
 </div>
